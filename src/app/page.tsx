@@ -1,5 +1,6 @@
 import Image from "next/image";
 import detailImg1 from '@/app/assets/detail1.svg';
+import LoginButton from "@/app/components/login-button";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
                   entrega e a qualidade do software.
               </p>
           </header>
+          <LoginButton />
       </main>
   );
 }
