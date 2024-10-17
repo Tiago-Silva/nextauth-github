@@ -1,8 +1,25 @@
+import Image from "next/image";
+import detailImg1 from '@/app/assets/detail1.svg';
 
 export default function Home() {
   return (
-    <main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>Hello world!!</h1>
-    </main>
+      <main className="text-center md:pt-40 pt-12 px-4 max-w-5xl font-light relative min-h-screen container mx-auto">
+          <Image
+              src={detailImg1}
+              alt="Imagem detalhe de fundo"
+              className="absolute -left-20 -z-10 bottom-0 md:visible invisible"
+          ></Image>
+          <header>
+              <h1 className="md:text-7xl sm:text-6xl text-4xl bg-neutral-50 ">
+                  Desbloqueie o poder da{' '}
+                  <span className="font-medium">Análise do GitHub</span>
+              </h1>
+              <p className="font-extralight text-neutral-600 md:text-xl mt-6 md:mt-10">
+                  Eleve o desenvolvimento de software com análises automáticas do
+                  GitHub, revelando métricas e KPIs inestimáveis para aprimorar a
+                  entrega e a qualidade do software.
+              </p>
+          </header>
+      </main>
   );
 }
